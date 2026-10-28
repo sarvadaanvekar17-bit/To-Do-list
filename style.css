@@ -1,0 +1,86 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(251, 249, 249);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    color:rgb(1, 8, 14);
+    text-align:center;
+}
+
+.todo-container{
+    background:linear-gradient(yellow, orange);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    padding:5px 10px;
+    border:none;
+    background: rgb(106, 16, 31);
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background: rgb(206, 186, 195);
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    border-bottom:1px solid #1f2208;
+    gap:10px;
+    border-radius:2px;
+    align-items:center;
+}
+
+li span{
+    flex:1;
+    overflow:wrap;
+}
+
+li.completed span{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.delete-btn{
+    background: rgb(106, 16, 31);
+    color:white;
+    padding:5px 10px;
+}
+
+.delete-btn:hover{
+    background: rgb(193, 166, 192);
+}
+
+#taskCount{
+    text-align:center;
+    margin-top:10px;
+    color:rgb(1, 8, 14);
+}
